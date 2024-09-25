@@ -27,9 +27,6 @@ describe("Test create product use case", () => {
         const productRepository = new ProductRepository();
         const usecase = new CreateProductUseCase(productRepository);
 
-        const product = new Product("123", "Product A", 45.36);
-        await productRepository.create(product)
-
         const input = {
           name: "Propduct A",
           type: "a",
