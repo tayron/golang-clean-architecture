@@ -28,8 +28,7 @@ describe("Unit Test find product use case", () => {
         }
 
         const result = await usecase.execute(input);
-
-        expect(result).toEqual(output)
+        expect(result).toEqual(output);
     });
 
     it("should not find a product", async() => {
